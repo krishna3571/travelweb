@@ -292,24 +292,6 @@ header {
     margin-left: 30px;
 }
 
-.rett {
-    /* width: 400px; */
-    overflow: hidden;
-    display: inline-block;
-    box-sizing: border-box;
-
-}
-
-.rett_0 {
-    /* width: 600px; */
-    margin-bottom: 30px;
-    transition: 0.3s;
-}
-
-.rett_0:HOVER {
-    transform: scale(1.1);
-    border-radius: 20PX;
-}
 
 .background-video {
     position: absolute;
@@ -377,25 +359,73 @@ header {
 
 /* contect from */
 
-.done {
-    
-    display: flex;
+.article-container {
+    width: 600px;
+    height: 300px;
+    /* Set a fixed height for the container */
+    /* border: 1px solid #000000; */
+    overflow: hidden;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.article-img-holder {
+    width: 100%;
+    background-image: url(../components/image-01.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.article-img-holder:hover {
+    transform: scale(1.05);
+}
+
+.just-1 {}
+
+.row2 {
+    display: flex !important;
     justify-content: center;
     align-items: center;
-  
+
 }
 
-.iam {
-    color: black;
-    font-size: 55px;
-    padding: 15px;
-    font-family: sans-serif;
+/* Responsive adjustments */
+@media screen and (max-width: 1400px) {
+    .article-container {
+        width: 500px;
+        height: 250px;
+        /* Set a fixed height for the container */
+        /* border: 1px solid #000000; */
+        overflow: hidden;
+        border-radius: 40px;
+        position: relative;
+    }
 }
 
-.text {
-    color: white;
-    border-right: 2px solid red;
-    font-size: 55px;
-    font-family: sans-serif;
-    color: rgb(255, 30, 0);
+@media screen and (max-width: 1200px) {
+    .article-container {
+        width: 400px;
+        height: 200px;
+        /* Set a fixed height for the container */
+        /* border: 1px solid #000000; */
+        overflow: hidden;
+        border-radius: 40px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .article-container {
+        width: 600px;
+        height: 300px;
+        /* Set a fixed height for the container */
+        /* border: 1px solid #000000; */
+        overflow: hidden;
+        border-radius: 40px;
+        position: relative;
+    }
 }

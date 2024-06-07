@@ -8,25 +8,12 @@ import img from "../components/pexels-valiphotos-589802.jpg";
 import offer from "../components/image-01.png";
 import offer02 from "../components/offer_02-3150-min.png";
 import offer03 from "../components/pexels-anne-sophie-parent-1111377-2105416.jpg";
-import Typed from 'typed.js'; // Import typed.js
+// import Typed from 'typed.js'; // Import typed.js
 
 
 const Navbar = () => {
 
-    useEffect(() => {
-        // Initialize Typed instance when component mounts
-        const typing = new Typed('.text', {
-            strings: ["", "Youtuber", "Freelancer", "Graphics Designer", "Web Designer", "Web Developer"],
-            typeSpeed: 100,
-            backSpeed: 40,
-            loop: true,
-        });
 
-        // Cleanup the Typed instance on unmount
-        return () => {
-            typing.destroy();
-        };
-    }, []);
 
     return (
         <>
@@ -68,22 +55,48 @@ const Navbar = () => {
                 <div className='container'>
                     <div className='box_0'>
                         <div className='dot'>
+
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <div className='container'>
+            
+            <div className='row2'>
 
-                <div className='row'>
-                    <div className='col-lg-6 col-md-6 col-sm-12 rett'>
-                        <img className='rett_0 img-fluid' src={offer} />
-                    </div>
-                    <div className='col-lg-6 col-md-6 col-sm-12 rett'>
-                        <img className='rett_0 img-fluid' src={offer02} />
+                <div className='just-1 mt-2'>
+
+                    <div class="article-container">
+                        <div class="article-img-holder"></div>
                     </div>
                 </div>
+
+                <div className='just-1 mt-2'>
+                    <div class="article-container">
+                        <div class="article-img-holder"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className='container'>
+
+                {/* <div className='row'>
+                    <div className='col-lg-6 col-md-6 col-sm-12 rett'>
+                        <div class="img-wrapper">
+                            <img class="inner-img" src={offer} />
+                        </div>
+                    </div>
+                    <div className='col-lg-6 col-md-6 col-sm-12 rett'>
+                        <div class="img-wrapper">
+                            <img class="inner-img" src={offer02} />
+                        </div>
+                    </div>
+                </div> */}
+
+
 
 
                 <div className='destion'>
@@ -123,10 +136,7 @@ const Navbar = () => {
             {/* contecdt */}
 
 
-            <div className='done'>
-                <div className="iam">I'm</div>
-                <div className="text"></div>
-            </div>
+
         </>
     );
 }
