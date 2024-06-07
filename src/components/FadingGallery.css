@@ -1,0 +1,32 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.image-container {
+    flex: 1 1 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+    margin-bottom: 16px;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
